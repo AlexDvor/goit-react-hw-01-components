@@ -5,24 +5,24 @@ import s from './Profile.module.css';
 function Profile({ url, alt, profName, tag, location, followers, views, likes }) {
   return (
     <Container>
-      <div className="profile">
-        <div className="description">
+      <div className={s.profile}>
+        <div className={s.description}>
           <img src={url} alt={alt} className={s.img} />
           <p className="name">{profName}</p>
           <p className="tag">{tag}</p>
           <p className="location">{location}</p>
         </div>
 
-        <ul className="stats">
-          <li>
+        <ul className={s.stats}>
+          <li className={s.stats_item}>
             <span className="label">Followers</span>
             <span className="quantity">{followers}</span>
           </li>
-          <li>
+          <li className={s.stats_item}>
             <span className="label">Views</span>
             <span className="quantity">{views}</span>
           </li>
-          <li>
+          <li className={s.stats_item}>
             <span className="label">Likes</span>
             <span className="quantity">{likes}</span>
           </li>

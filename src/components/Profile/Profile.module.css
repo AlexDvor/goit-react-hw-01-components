@@ -1,4 +1,26 @@
+.profile {
+  border: 1px solid rgb(167, 167, 167);
+  width: 300px;
+}
+
+.description {
+  text-align: center;
+}
+
 .img {
   width: 100px;
   height: 150px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-top: 1px solid rgb(167, 167, 167);
+}
+
+.stats_item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
