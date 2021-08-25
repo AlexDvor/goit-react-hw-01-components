@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Profile({ url, alt, profName, tag, location, followers, views, likes }) {
+function Profile({ url, alt, profName, tag, location, followers, views, likes }) {
   return (
     <div className="profile">
       <div className="description">
@@ -29,12 +29,14 @@ export default function Profile({ url, alt, profName, tag, location, followers, 
 }
 
 Profile.propTypes = {
-  url: PropTypes.string,
-  alt: PropTypes.string,
-  profName: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  followers: PropTypes.number,
-  views: PropTypes.number,
-  likes: PropTypes.number,
+  url: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  profName: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
 };
+
+export default Profile;
