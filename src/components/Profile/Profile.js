@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import s from './Profile.module.css';
 
 function Profile({ url, alt, profName, tag, location, followers, views, likes }) {
   return (
     <div className="profile">
       <div className="description">
-        <img src={url} alt={alt} className="avatar" />
+        <img src={url} alt={alt} className={s.img} />
         <p className="name">{profName}</p>
         <p className="tag">{tag}</p>
         <p className="location">{location}</p>

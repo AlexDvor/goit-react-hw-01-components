@@ -1,9 +1,10 @@
-import Profile from './components/Profile';
+import Profile from './components/Profile/Profile';
+import Container from './components/Container/Container';
 import data from './user.json';
 
 function App() {
   return (
-    <div>
+    <Container>
       <Profile
         url={data.avatar}
         alt={data.name}
@@ -14,7 +15,7 @@ function App() {
         views={data.stats.views}
         likes={data.stats.likes}
       />
-    </div>
+    </Container>
   );
 }
 
