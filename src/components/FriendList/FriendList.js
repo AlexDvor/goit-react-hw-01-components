@@ -7,7 +7,7 @@ function FriendList({ friends }) {
     <Container>
       <ul className={s.friendList}>
         {friends.map(({ avatar, name, isOnline, id }) => (
-          <li className="item" key={id}>
+          <li className={s.item} key={id}>
             <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
           </li>
         ))}

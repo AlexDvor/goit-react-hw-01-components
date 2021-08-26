@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function FriendListItem({ avatar, name, isOnline, id }) {
   return (
     <>
-      <span className="status">{isOnline}</span>
+      <span className="status">{isOnline ? 'ok' : 'no'}</span>
       <img className="avatar" src={avatar} alt={name} width="48" />
       <p className="name">{name}</p>
     </>
