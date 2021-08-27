@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Container from '../Container/Container';
 import s from './TransactionHistory.module.css';
 function TransactionHistory({ items }) {
@@ -25,5 +26,16 @@ function TransactionHistory({ items }) {
     </Container>
   );
 }
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.exact({
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+    }),
+  ),
+};
 
 export default TransactionHistory;
