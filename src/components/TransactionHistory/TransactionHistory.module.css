@@ -3,6 +3,7 @@
   border: none;
   margin-bottom: 20px;
   border-collapse: separate;
+  border: 1px solid #ddd;
 }
 
 .th {
@@ -10,7 +11,21 @@
   text-align: left;
   border: none;
   padding: 10px 15px;
-  background: #ededed;
+  background: #3086cd;
   font-size: 14px;
-  border-top: 1px solid #ddd;
+  color: white;
+
+  text-align: center;
+}
+
+.tr {
+  text-align: center;
+}
+
+.td {
+  padding: 10px;
+}
+
+.tr:nth-child(even) {
+  background: #f8f8f8;
 }

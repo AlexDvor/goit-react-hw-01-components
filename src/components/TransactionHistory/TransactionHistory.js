@@ -6,7 +6,7 @@ function TransactionHistory({ items }) {
     <Container>
       <table className={s.transactionHistory}>
         <thead>
-          <tr>
+          <tr className={s.tr}>
             <th className={s.th}>Type</th>
             <th className={s.th}>Amount</th>
             <th className={s.th}>Currency</th>
@@ -15,10 +15,10 @@ function TransactionHistory({ items }) {
 
         <tbody>
           {items.map(({ type, amount, currency, id }) => (
-            <tr key={id}>
-              <td>{type}</td>
-              <td>{amount}</td>
-              <td>{currency}</td>
+            <tr className={s.tr} key={id}>
+              <td className={s.td}>{type}</td>
+              <td className={s.td}>{amount}</td>
+              <td className={s.td}>{currency}</td>
             </tr>
           ))}
         </tbody>
