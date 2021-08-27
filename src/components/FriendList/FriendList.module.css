@@ -6,6 +6,7 @@
   border: 1px solid gainsboro;
   width: 250px;
   padding: 10px;
+  box-shadow: 3px 10px 36px -13px rgba(0, 0, 0, 0.75);
 }
 
 .item:not(:last-child) {
