@@ -1,0 +1,26 @@
+.percentage {
+  margin-top: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  width: 40px;
+}
+
+.item:nth-child(1) {
+  background-color: orange;
+}
+.item:nth-child(2) {
+  background-color: rgb(91, 151, 91);
+}
+.item:nth-child(3) {
+  background-color: rgb(153, 111, 129);
+}
+.item:nth-child(4) {
+  background-color: rgb(160, 155, 88);
+}
+.item:nth-child(5) {
+  background-color: rgb(116, 118, 151);
+}

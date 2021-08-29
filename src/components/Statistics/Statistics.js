@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Container from '../Container/Container';
+import StatisticsList from './StatisticsList';
 import s from './Statistics.module.css';
 
 function Statistics({ stats, title }) {
@@ -11,10 +12,7 @@ function Statistics({ stats, title }) {
 
           <ul className={s.statsList}>
             {stats.map(item => (
-              <li className={s.item} key={item.id}>
-                <span className="label">{item.label}</span>
-                <span className={s.percentage}>{item.percentage}%</span>
-              </li>
+              <StatisticsList obj={item} key={item.id} />
             ))}
           </ul>
         </div>
