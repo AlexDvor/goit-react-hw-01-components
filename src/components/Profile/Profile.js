@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Container from '../Container/Container';
+import ProfileList from './ProfileList';
 import s from './Profile.module.css';
 
 function Profile({ name, tag, location, avatar, stats }) {
@@ -12,20 +13,8 @@ function Profile({ name, tag, location, avatar, stats }) {
           <p className="tag">{tag}</p>
           <p className="location">{location}</p>
         </div>
-
         <ul className={s.stats}>
-          <li className={s.stats_item}>
-            <span className="label">Followers</span>
-            <span className="quantity">{stats.followers}</span>
-          </li>
-          <li className={s.stats_item}>
-            <span className="label">Views</span>
-            <span className="quantity">{stats.views}</span>
-          </li>
-          <li className={s.stats_item}>
-            <span className="label">Likes</span>
-            <span className="quantity">{stats.likes}</span>
-          </li>
+          <ProfileList obj={stats} />
         </ul>
       </div>
     </Container>
