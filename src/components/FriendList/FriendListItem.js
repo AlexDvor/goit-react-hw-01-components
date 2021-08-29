@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import s from './FriendListItem.module.css';
 
-function FriendListItem({ avatar, name, isOnline, id }) {
+function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <li className={s.item} key={id}>
+    <li className={s.item}>
       <span className={`${s.status} ${s[isOnline]}`}></span>
       <img className="avatar" src={avatar} alt={name} width="48" />
       <p className="name">{name}</p>

@@ -13,14 +13,11 @@ function App() {
   return (
     <div>
       <Profile
-        url={data.avatar}
-        alt={data.name}
-        profName={data.name}
+        name={data.name}
         tag={data.tag}
         location={data.location}
-        followers={data.stats.followers}
-        views={data.stats.views}
-        likes={data.stats.likes}
+        avatar={data.avatar}
+        stats={data.stats}
       />
       <Statistics title="Upload stats" stats={statisticalData} />;
       <FriendList friends={friendsData} />

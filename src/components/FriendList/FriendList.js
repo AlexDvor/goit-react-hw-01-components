@@ -6,8 +6,8 @@ function FriendList({ friends }) {
   return (
     <Container>
       <ul>
-        {friends.map(({ avatar, name, isOnline }) => (
-          <FriendListItem avatar={avatar} name={name} isOnline={isOnline} />
+        {friends.map(({ avatar, name, isOnline, id }) => (
+          <FriendListItem avatar={avatar} name={name} isOnline={isOnline} key={id} />
         ))}
       </ul>
     </Container>
